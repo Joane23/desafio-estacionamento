@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento - Cadastro de vaga</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="container-full">
+        <header class="container header">
+            <h1>Estacionamento</h1>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Listar</a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html">Cadastrar</a>
+                    </li>
+                    <li>
+                        <a href="vagas-livres.html">Vagas livres</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- main -->
+    <main class="container">
+        <h2>Cadastrar Vaga</h2>
+        <form id="formCadastroVaga">
+            <fieldset>
+                <legend>Vaga</legend>
+                <label for="inputNumeroVaga">Número</label>
+                <input type="number" id="inputNumeroVaga" name="inputNumeroVaga" required />
+            </fieldset>
+            <fieldset>
+                <legend>Aparamento</legend>
+                <label for="inputBlocoApartamento">Bloco</label>
+                <input type="text" id="inputBlocoApartamento" name="inputBlocoApartamento" required />
+                <label for="inputNumeroApartamento">Número</label>
+                <input type="number" id="inputNumeroApartamento" name="inputNumeroApartamento" required />
+            </fieldset>
+            <fieldset>
+                <legend>Veículo</legend>
+                <label for="inputProprietarioVeiculo">Nome do Proprietário</label>
+                <input type="text" id="inputProprietarioVeiculo" name="inputProprietarioVeiculo" required />
+                <label for="inputPlacaVeiculo">Placa</label>
+                <input type="text" id="inputPlacaVeiculo" name="inputPlacaVeiculo" required />
+                <label for="inputModeloVeiculo">Modelo</label>
+                <input type="text" id="inputModeloVeiculo" name="inputModeloVeiculo" required />
+                <label for="inputCorVeiculo">Cor</label>
+                <input type="text" id="inputCorVeiculo" name="inputCorVeiculo" required />
+            </fieldset>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </main>
+
+    <script src="scriptCadastro.js" defer></script>
+</body>
+</html>
